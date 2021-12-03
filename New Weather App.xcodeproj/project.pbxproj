@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4FA5472C275AD163001E619F /* New_Weather_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA5472B275AD163001E619F /* New_Weather_AppApp.swift */; };
+		4FA5472C275AD163001E619F /* New_Weather_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA5472B275AD163001E619F /* New_Weather_App.swift */; };
 		4FA5472E275AD163001E619F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA5472D275AD163001E619F /* ContentView.swift */; };
 		4FA54730275AD164001E619F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FA5472F275AD164001E619F /* Assets.xcassets */; };
 		4FA54733275AD164001E619F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FA54732275AD164001E619F /* Preview Assets.xcassets */; };
@@ -15,7 +15,7 @@
 
 /* Begin PBXFileReference section */
 		4FA54728275AD163001E619F /* New Weather App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "New Weather App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4FA5472B275AD163001E619F /* New_Weather_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = New_Weather_AppApp.swift; sourceTree = "<group>"; };
+		4FA5472B275AD163001E619F /* New_Weather_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = New_Weather_App.swift; sourceTree = "<group>"; };
 		4FA5472D275AD163001E619F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4FA5472F275AD164001E619F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4FA54732275AD164001E619F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -51,7 +51,7 @@
 		4FA5472A275AD163001E619F /* New Weather App */ = {
 			isa = PBXGroup;
 			children = (
-				4FA5472B275AD163001E619F /* New_Weather_AppApp.swift */,
+				4FA5472B275AD163001E619F /* New_Weather_App.swift */,
 				4FA5472D275AD163001E619F /* ContentView.swift */,
 				4FA5472F275AD164001E619F /* Assets.xcassets */,
 				4FA54731275AD164001E619F /* Preview Content */,
@@ -138,7 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FA5472E275AD163001E619F /* ContentView.swift in Sources */,
-				4FA5472C275AD163001E619F /* New_Weather_AppApp.swift in Sources */,
+				4FA5472C275AD163001E619F /* New_Weather_App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
