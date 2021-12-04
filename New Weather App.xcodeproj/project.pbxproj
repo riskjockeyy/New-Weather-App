@@ -11,6 +11,9 @@
 		4FA5472E275AD163001E619F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA5472D275AD163001E619F /* ContentView.swift */; };
 		4FA54730275AD164001E619F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FA5472F275AD164001E619F /* Assets.xcassets */; };
 		4FA54733275AD164001E619F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FA54732275AD164001E619F /* Preview Assets.xcassets */; };
+		4FA5473B275ADBD0001E619F /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA5473A275ADBD0001E619F /* ContentModel.swift */; };
+		4FA54740275ADE48001E619F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA5473F275ADE48001E619F /* Constants.swift */; };
+		4FA54743275AE7A1001E619F /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA54742275AE7A1001E619F /* Response.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,10 @@
 		4FA5472D275AD163001E619F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4FA5472F275AD164001E619F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4FA54732275AD164001E619F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4FA5473A275ADBD0001E619F /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
+		4FA5473F275ADE48001E619F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4FA54742275AE7A1001E619F /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		4FA54746275B034F001E619F /* New-Weather-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "New-Weather-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +58,12 @@
 		4FA5472A275AD163001E619F /* New Weather App */ = {
 			isa = PBXGroup;
 			children = (
+				4FA54746275B034F001E619F /* New-Weather-App-Info.plist */,
 				4FA5472B275AD163001E619F /* New_Weather_App.swift */,
-				4FA5472D275AD163001E619F /* ContentView.swift */,
+				4FA5473C275ADCFA001E619F /* View */,
+				4FA54739275ADBBD001E619F /* ViewModel */,
+				4FA54741275AE763001E619F /* Model */,
+				4FA5473E275ADE2C001E619F /* Constant */,
 				4FA5472F275AD164001E619F /* Assets.xcassets */,
 				4FA54731275AD164001E619F /* Preview Content */,
 			);
@@ -65,6 +76,38 @@
 				4FA54732275AD164001E619F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4FA54739275ADBBD001E619F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4FA5473A275ADBD0001E619F /* ContentModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4FA5473C275ADCFA001E619F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4FA5472D275AD163001E619F /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4FA5473E275ADE2C001E619F /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				4FA5473F275ADE48001E619F /* Constants.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		4FA54741275AE763001E619F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4FA54742275AE7A1001E619F /* Response.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +182,9 @@
 			files = (
 				4FA5472E275AD163001E619F /* ContentView.swift in Sources */,
 				4FA5472C275AD163001E619F /* New_Weather_App.swift in Sources */,
+				4FA5473B275ADBD0001E619F /* ContentModel.swift in Sources */,
+				4FA54740275ADE48001E619F /* Constants.swift in Sources */,
+				4FA54743275AE7A1001E619F /* Response.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +317,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"New Weather App/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "New-Weather-App-Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need the location permission to show you weather";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +347,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"New Weather App/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "New-Weather-App-Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need the location permission to show you weather";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

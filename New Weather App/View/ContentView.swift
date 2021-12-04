@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var model : ContentModel
+       
     var body: some View {
         
         ZStack(alignment: .top) {
@@ -31,8 +33,12 @@ struct ContentView: View {
                 Spacer()
                 HStack {
                     HStack(alignment: .bottom) {
-                        Text("16")
-                            .font(.system(size: 80, weight: .heavy, design: .default))
+                        if let weather = model.response {
+                                    
+                            Text(String(format: "%1.f", (weather.main.temp) - 273.15))
+                                .font(.system(size: 80, weight: .heavy, design: .default))
+                        }
+                            
                         Text("° C")
                             .font(.system(size: 40, weight: .light, design: .default))
                     }
@@ -42,12 +48,24 @@ struct ContentView: View {
                         
                         HStack {
                             Image(systemName: "arrow.up")
-                            Text("18°C")
+                           
+                            if let weather = model.response {
+                                        
+                                Text(String(format: "%1.f ° C", (weather.main.temp_max) - 273.15))
+                                   
+                            }
                                 
                         }
                         HStack {
                             Image(systemName: "arrow.down")
-                            Text("8°C")
+                         
+                                
+                                if let weather = model.response {
+                                            
+                                    Text(String(format: "%1.f ° C", (weather.main.temp) - 273.15))
+                                        
+                                }
+                            
                         }
                         
                     }
@@ -58,9 +76,20 @@ struct ContentView: View {
                 
                     
                 
-                Text("Heavy rain")
-                    .font(.system(size: 30, weight: .semibold, design: .default))
-                    .padding([.horizontal, .bottom])
+                if let weather = model.response {
+                    VStack(alignment: .leading) {
+                        ForEach(weather.weather) { data in
+                            Text(data.description)
+                                .font(.system(size: 30, weight: .semibold, design: .default))
+                                .padding([.horizontal, .bottom])
+                            
+                            Text(String(format: "feels like %1.f ° C", (weather.main.feels_like) - 273.15))
+                                .padding(.leading)
+                        }
+                    }
+                    
+                }
+                    
                     
                 HStack(spacing: 3) {
                         ForEach(0 ..< 7) { item in
@@ -82,8 +111,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ContentView()
+//    }
+//}
